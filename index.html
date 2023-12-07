@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Very Simple Chat App</title>
+</head>
+<body>
+    <h1 class="top">Very Simple Chat App</h1>
+    <h6 class="top">Enes Jakupi</h6>
+    <div class="chat-container" id="chatContainer">
+        <!-- Messages will be dynamically added here -->
+    </div>
+    <div class="input-container"> 
+        <input type="text" id="userMessage" placeholder="Type your message..." onkeyup="handleKeyPress(event)">
+        <!--Creating an input field for user and calling the 'handleKeyPress'function-->
+        <button onclick="postMessage()">Send</button>
+        <!--Creating a button to send input and calling 'postMessage' function-->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--Linking the HTML file to the jQuery library for DOM manipulation-->
+    <script src="script.js"></script>
+</body>
+</html>
